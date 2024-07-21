@@ -106,6 +106,7 @@
         style="@style/Widget.AppCompat.TextView.SpinnerItem"
         android:layout_width="157dp"
         android:layout_height="30dp"
+        android:layout_marginBottom="50dp"
         android:text="Kalan Süre:"
         android:textColor="#000000"
         android:textSize="24sp"
@@ -113,30 +114,27 @@
         app:layout_constraintBottom_toTopOf="@+id/gridLayout0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.763"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/scoreText"
         android:layout_width="76dp"
         android:layout_height="30dp"
+        android:layout_marginBottom="50dp"
         android:text="Skor:0"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="@+id/timeText"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout0"
         app:layout_constraintEnd_toStartOf="@+id/timeText"
         app:layout_constraintHorizontal_bias="0.626"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="178dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#E1F5FE"
         android:onClick="startGame"
         android:selectAllOnFocus="true"
@@ -145,31 +143,27 @@
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.996"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout0"
         app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="178dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="#E1F5FE"
         android:onClick="backActivity"
         android:text="ANA MENU"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.994"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout0"
         app:strokeWidth="2dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
