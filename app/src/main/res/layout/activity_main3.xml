@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE358"
+    android:background="#42849E"
     tools:context=".MainActivity2">
 
     <Button
@@ -23,6 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.538"
         app:strokeWidth="2dp" />
+
     <TextView
         android:id="@+id/maxScoreText"
         android:layout_width="wrap_content"

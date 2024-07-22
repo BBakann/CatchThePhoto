@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         timeText = findViewById(R.id.timeText);
         scoreText = findViewById(R.id.scoreText);
-        startButton = findViewById(R.id.button2); // Start button
+        startButton = findViewById(R.id.button2);
 
         imageView1 = findViewById(R.id.imageView1);
         imageView2 = findViewById(R.id.imageView2);
@@ -77,12 +77,12 @@ public class MainActivity extends AppCompatActivity {
         score = 0;
         level = 1;
         scoreThreshold = 10; // her seviye için gereken skor
-        hideDelay = 900; // ilk seviyede görsellerin çıkma hızı
+        hideDelay = 600; // ilk seviyede görsellerin çıkma hızı
         scoreText.setText("Skor: " + score);
-        timeText.setText("Kalan Süre: 10");
+        timeText.setText("Kalan Süre:10");
         startButton.setVisibility(View.VISIBLE);
         for (ImageView image : imageArray) {
-            image.setVisibility(View.INVISIBLE);
+            image.setVisibility(View.INVISIBLE); // reset yapınca görselleri görünmez yapıyoruz
         }
     }
 
@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void playLevel(int millisInFuture) {
-        updateScoreAndTime(); // Skor ve süreyi güncelle
+        updateScoreAndTime();
 
         HideImages();
         new CountDownTimer(millisInFuture, 1000) {
@@ -125,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
                                 level++;
-                                hideDelay -= 250; // her seviyede görsellerin çıkma hızını azalt
-                                scoreThreshold += 3; // her seviyede gereken skoru azaltır zorlaştığı için
+                                hideDelay -= 75; // her seviyede görsellerin çıkma hızını azalt
+                                scoreThreshold += 1; // her seviyede gereken skoru azaltır zorlaştığı için
                                 playLevel(initialTime + level * 1000); // her seviyede süreyi arttır
                             }
                         });
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 Random random = new Random();
-                int i = random.nextInt(9); // 0 ile 8 arasında bir sayı üretir
+                int i = random.nextInt(9);
                 imageArray[i].setVisibility(View.VISIBLE); // Rastgele bir resmi görünür yapar
                 isClickable = true; // Görsele tıklanabilir olduğunu işaretler
 
