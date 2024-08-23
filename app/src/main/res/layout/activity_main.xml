@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#42849E"
+    android:background="#94B2BD"
     tools:context=".MainActivity">
 
     <androidx.gridlayout.widget.GridLayout
@@ -25,7 +25,7 @@
             android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="0"
-            app:srcCompat="@drawable/besiktasarma" />
+            app:srcCompat="@drawable/giraffe" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -34,7 +34,7 @@
             android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="0"
-            app:srcCompat="@drawable/gala" />
+            app:srcCompat="@drawable/hippo" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -43,7 +43,7 @@
             android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="0"
-            app:srcCompat="@drawable/trabzon" />
+            app:srcCompat="@drawable/monkey" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -52,7 +52,7 @@
             android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="1"
-            app:srcCompat="@drawable/fener1" />
+            app:srcCompat="@drawable/panda" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -61,7 +61,7 @@
             android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="1"
-            app:srcCompat="@drawable/unnamed" />
+            app:srcCompat="@drawable/parrot" />
 
         <ImageView
             android:id="@+id/imageView6"
@@ -70,7 +70,7 @@
             android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="1"
-            app:srcCompat="@drawable/adanademirspor" />
+            app:srcCompat="@drawable/elephantt" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -79,7 +79,7 @@
             android:onClick="increaseScore"
             app:layout_column="0"
             app:layout_row="2"
-            app:srcCompat="@drawable/bursasporamblem" />
+            app:srcCompat="@drawable/penguin" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -88,7 +88,7 @@
             android:onClick="increaseScore"
             app:layout_column="1"
             app:layout_row="2"
-            app:srcCompat="@drawable/sakarya" />
+            app:srcCompat="@drawable/pig" />
 
         <ImageView
             android:id="@+id/imageView9"
@@ -97,7 +97,7 @@
             android:onClick="increaseScore"
             app:layout_column="2"
             app:layout_row="2"
-            app:srcCompat="@drawable/ankaragucu" />
+            app:srcCompat="@drawable/rabbit" />
 
     </androidx.gridlayout.widget.GridLayout>
 
